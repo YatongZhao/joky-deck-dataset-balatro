@@ -1,5 +1,5 @@
 {
-  "name": "@yatongzhao/joky-deck-data-set-balatro",
+  "name": "@yatongzhao/joky-deck-dataset-balatro",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -15,8 +15,5 @@
   "dependencies": {
     "@yatongzhao/joky-deck-core": "^1.3.0"
   },
-  "packageManager": "yarn@4.9.1",
-  "resolutions": {
-    "@yatongzhao/joky-deck-core": "portal:/C:/Users/yaton/Projects/joky-deck-core"
-  }
+  "packageManager": "yarn@4.9.1"
 }
