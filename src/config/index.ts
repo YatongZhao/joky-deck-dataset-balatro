@@ -1,32 +1,10 @@
-import type { Config } from '@yatongzhao/joky-deck-core'
-import joker from './joker.png'
+import type { ConfigMap } from '@yatongzhao/joky-deck-core'
+import { balatro } from './balatro'
 
-function main() {
-  console.log(joker)
-  console.log('Hello, world!!!!')
-}
-
-function hello() {
-  console.log('Hello, world!')
-}
-
-main()
-hello()
-
-const config: Config = {
-  jokers: [
-    {
-      name: 'Joker',
-      description: 'Joker',
-      image: joker,
-      value: 14,
-      suit: 'joker',
-    },
-  ],
+const configMap: ConfigMap = {
+  balatro,
 }
 
 export {
-  main,
-  hello,
-  config,
+  configMap,
 }
