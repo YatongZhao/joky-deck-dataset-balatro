@@ -1,10 +1,10 @@
-import type { JokerCard, JokerCategory } from '@yatongzhao/joky-deck-core'
 import { getAbstractJokerConfig } from './jokers/AbstractJoker/AbstractJoker'
+import type { GetConfigParam } from '../type'
 
-export const getBalatroConfig = (jokerCard: typeof JokerCard, jokerCategory: typeof JokerCategory) => {
+export const getBalatroConfig = (params: GetConfigParam) => {
   return {
     jokers: [
-      getAbstractJokerConfig(jokerCard, jokerCategory),
+      getAbstractJokerConfig(params),
     ],
   }
 }

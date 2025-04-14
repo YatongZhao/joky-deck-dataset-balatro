@@ -1,12 +1,14 @@
-import type { Game, JokerCard, JokerMetadata, JokerCategory, JokerConfig } from "@yatongzhao/joky-deck-core";
-import jokerImage from './joker.png'
+import type { Game, JokerMetadata, JokerConfig } from "@yatongzhao/joky-deck-core";
+import type { GetConfigParam } from '../../../type'
+import flatJokerImage from './flat.png'
+import jokerJokerImage from './joker.png'
 
-export const getAbstractJokerConfig = (jokerCard: typeof JokerCard, jokerCategory: typeof JokerCategory): JokerConfig => {
+export const getAbstractJokerConfig = ({ jokerCard, jokerCategory, style }: GetConfigParam): JokerConfig => {
   const ABSTRACT_JOKER_METADATA: JokerMetadata = {
     price: 4,
     name: '抽象小丑',
     description: '每张小丑牌+3倍率',
-    image: jokerImage,
+    image: style === 'flat' ? flatJokerImage : jokerJokerImage,
     category: jokerCategory.common,
   }
 
