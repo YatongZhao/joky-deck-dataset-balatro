@@ -379,14 +379,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yatongzhao/joky-deck-core@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "@yatongzhao/joky-deck-core@npm:1.3.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40yatongzhao%2Fjoky-deck-core%2F1.3.0%2F275479515d6a3926df0e74dfd18d73aba29612a7"
+"@yatongzhao/joky-deck-core@npm:^1.3.1":
+  version: 1.3.1
+  resolution: "@yatongzhao/joky-deck-core@npm:1.3.1::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40yatongzhao%2Fjoky-deck-core%2F1.3.1%2Ff5998a0b216a9167c5163c3f97b51fc1c519b93f"
   dependencies:
     ramda: "npm:^0.30.1"
     rxjs: "npm:^7.8.2"
     uuid: "npm:^11.1.0"
-  checksum: 10c0/e3d17837331e9ae6855dd1a721e66d12d4ddd04bcd07b9c2f5b69b6568bf68d50feaff9499aa71784b54fe47bb78f16232504f36e41bd46258ccb40702e3c48b
+  checksum: 10c0/23387a7a775f194aafc52a199f7f327921c197dbd72fd56591da86718dc94040d5ecc99cf03bacfd78b9b9090643293444c40981594037ad9a2062947d599d6b
   languageName: node
   linkType: hard
 
@@ -394,7 +394,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@yatongzhao/joky-deck-dataset-balatro@workspace:."
   dependencies:
-    "@yatongzhao/joky-deck-core": "npm:^1.3.0"
+    "@yatongzhao/joky-deck-core": "npm:^1.3.1"
     typescript: "npm:~5.7.2"
     vite: "npm:^6.2.0"
   languageName: unknown

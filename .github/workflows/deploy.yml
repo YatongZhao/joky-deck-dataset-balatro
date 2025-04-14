@@ -39,14 +39,31 @@ jobs:
           npm config set "@yatongzhao:registry" "https://npm.pkg.github.com"
           npm config set "//npm.pkg.github.com/:_authToken" "${{ secrets.NPM_TOKEN }}"
 
+      - name: Set up .yarnrc.yml
+        run: |
+          yarn config set -H "npmScopes.yatongzhao.npmAlwaysAuth" "true"
+          yarn config set -H "npmScopes.yatongzhao.npmRegistryServer" "https://npm.pkg.github.com"
+          yarn config set -H "npmScopes.yatongzhao.npmAuthToken" "${{ secrets.NPM_TOKEN }}"
+  
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
+      - name: Restore cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            .next/cache
+          # Generate a new cache whenever packages or source files change.
+          key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          # If source files changed but packages didn't, rebuild from a prior cache.
+          restore-keys: |
+            ${{ runner.os }}-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
+
       - name: Install dependencies
-        run: npm install
+        run: yarn install
 
       - name: Build
-        run: npm run build
+        run: yarn build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
