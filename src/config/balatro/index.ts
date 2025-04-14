@@ -1,8 +1,10 @@
-import type { Config } from '@yatongzhao/joky-deck-core'
-import { abstractJokerConfig } from './jokers/AbstractJoker/AbstractJoker'
+import type { JokerCard, JokerCategory } from '@yatongzhao/joky-deck-core'
+import { getAbstractJokerConfig } from './jokers/AbstractJoker/AbstractJoker'
 
-export const balatro: Config = {
-  jokers: [
-    abstractJokerConfig,
-  ],
+export const getBalatroConfig = (jokerCard: typeof JokerCard, jokerCategory: typeof JokerCategory) => {
+  return {
+    jokers: [
+      getAbstractJokerConfig(jokerCard, jokerCategory),
+    ],
+  }
 }
