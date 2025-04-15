@@ -11,6 +11,7 @@ import { getCrazyJokerConfig } from './jokers/CrazyJoker/CrazyJoker'
 import { getCreditCardConfig } from './jokers/CreditCard/CreditCard'
 import { getDelayedGratificationConfig } from './jokers/DelayedGratification/DelayedGratification'
 import { getDeviousJokerConfig } from './jokers/DeviousJoker/DeviousJoker'
+import { getDrollJokerConfig } from './jokers/DrollJoker/DrollJoker'
 
 export const getBalatroConfig = (params: GetConfigParam) => {
   return {
@@ -27,6 +28,7 @@ export const getBalatroConfig = (params: GetConfigParam) => {
       getCreditCardConfig(params),
       getDelayedGratificationConfig(params),
       getDeviousJokerConfig(params),
+      getDrollJokerConfig(params),
     ],
   }
 }
