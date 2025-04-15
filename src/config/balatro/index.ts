@@ -8,6 +8,7 @@ import { getChaosTheClownConfig } from './jokers/ChaosTheClown.ts/ChaosTheClown'
 import { getCleverJokerConfig } from './jokers/CleverJoker/CleverJoker'
 import { getCraftyJokerConfig } from './jokers/CraftyJoker/CraftyJoker'
 import { getCrazyJokerConfig } from './jokers/CrazyJoker/CrazyJoker'
+import { getCreditCardConfig } from './jokers/CreditCard/CreditCard'
 
 export const getBalatroConfig = (params: GetConfigParam) => {
   return {
@@ -21,6 +22,7 @@ export const getBalatroConfig = (params: GetConfigParam) => {
       getCleverJokerConfig(params),
       getCraftyJokerConfig(params),
       getCrazyJokerConfig(params),
+      getCreditCardConfig(params),
     ],
   }
 }
