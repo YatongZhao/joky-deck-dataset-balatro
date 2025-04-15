@@ -7,7 +7,7 @@ import type {
 import flatJokerImage from "./flat.png";
 import jokerJokerImage from "./joker.png";
 
-export const getCreditCardConfig = ({ jokerCard, jokerCategory, style, valueType }: GetConfigParam): JokerConfig => {
+export const getCreditCardConfig = ({ jokerCard, jokerCategory, style }: GetConfigParam): JokerConfig => {
   const CREDIT_CARD_METADATA: JokerMetadata = {
     price: 4,
     name: 'Credit Card',
