@@ -1,5 +1,4 @@
-import type { Game, JokerMetadata, JokerConfig } from "@yatongzhao/joky-deck-core";
-import type { GetConfigParam } from '../../../type'
+import type { Game, JokerMetadata, JokerConfig, GetConfigParam } from "@yatongzhao/joky-deck-core";
 import flatJokerImage from './flat.png'
 import jokerJokerImage from './joker.png'
 import { randomByChance } from "../../../../utils/random";

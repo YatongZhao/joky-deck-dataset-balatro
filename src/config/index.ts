@@ -1,14 +1,8 @@
-import type { CardLabels, JokerCard, JokerCategory } from '@yatongzhao/joky-deck-core'
 import { getBalatroConfig } from './balatro'
-
-const style = 'joker';
-const getConfig = ({ jokerCard, jokerCategory, cardLabels }: {
-  jokerCard: typeof JokerCard;
-  jokerCategory: typeof JokerCategory;
-  cardLabels: typeof CardLabels;
-}) => {
+import type { GetConfigParam } from '@yatongzhao/joky-deck-core'
+const getConfig = ({ jokerCard, jokerCategory, cardLabels, valueType, style = 'joker' }: GetConfigParam) => {
   return {
-    balatro: getBalatroConfig({ jokerCard, jokerCategory, style, cardLabels }),
+    balatro: getBalatroConfig({ jokerCard, jokerCategory, style, cardLabels, valueType }),
   }
 }
 
