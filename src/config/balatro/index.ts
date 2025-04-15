@@ -6,7 +6,7 @@ import { getBusinessCardConfig } from './jokers/BusinessCard/BusinessCard'
 import { getCavendishConfig } from './jokers/Cavendish/Cavendish'
 import { getChaosTheClownConfig } from './jokers/ChaosTheClown.ts/ChaosTheClown'
 import { getCleverJokerConfig } from './jokers/CleverJoker/CleverJoker'
-
+import { getCraftyJokerConfig } from './jokers/CraftyJoker/CraftyJoker'
 export const getBalatroConfig = (params: GetConfigParam) => {
   return {
     jokers: [
@@ -17,6 +17,7 @@ export const getBalatroConfig = (params: GetConfigParam) => {
       getCavendishConfig(params),
       getChaosTheClownConfig(params),
       getCleverJokerConfig(params),
+      getCraftyJokerConfig(params),
     ],
   }
 }
