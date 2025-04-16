@@ -17,6 +17,7 @@ import { getEggConfig } from './jokers/Egg/Egg'
 import { getEightBallConfig } from './jokers/EightBall/EightBall'
 import { getEvenStevenConfig } from './jokers/EvenSteven/EvenSteven'
 import { getFacelessJokerConfig } from './jokers/FacelessJoker/FacelessJoker'
+import { getFortuneTellerConfig } from './jokers/FortuneTeller/FortuneTeller'
 
 export const getBalatroConfig = (params: GetConfigParam) => {
   return {
@@ -39,6 +40,7 @@ export const getBalatroConfig = (params: GetConfigParam) => {
       getEightBallConfig(params),
       getEvenStevenConfig(params),
       getFacelessJokerConfig(params),
+      getFortuneTellerConfig(params),
     ],
   }
 }
