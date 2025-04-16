@@ -20,6 +20,7 @@ import { getFacelessJokerConfig } from './jokers/FacelessJoker/FacelessJoker'
 import { getFortuneTellerConfig } from './jokers/FortuneTeller/FortuneTeller'
 import { getGluttonousJokerConfig } from './jokers/GluttonousJoker/GluttonousJoker'
 import { getGoldenJokerConfig } from './jokers/GoldenJoker/GoldenJoker'
+import { getGoldenTicketConfig } from './jokers/GoldenTicket/GoldenTicket'
 
 export const getBalatroConfig = (params: GetConfigParam) => {
   return {
@@ -45,6 +46,7 @@ export const getBalatroConfig = (params: GetConfigParam) => {
       getFortuneTellerConfig(params),
       getGluttonousJokerConfig(params),
       getGoldenJokerConfig(params),
+      getGoldenTicketConfig(params),
     ],
   }
 }
