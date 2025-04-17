@@ -22,6 +22,7 @@ import { getGluttonousJokerConfig } from './jokers/GluttonousJoker/GluttonousJok
 import { getGoldenJokerConfig } from './jokers/GoldenJoker/GoldenJoker'
 import { getGoldenTicketConfig } from './jokers/GoldenTicket/GoldenTicket'
 import { getGreedyJokerConfig } from './jokers/GreedyJoker/GreedyJoker'
+import { getGreenJokerConfig } from './jokers/GreenJoker/GreenJoker'
 
 export const getBalatroConfig = (params: GetConfigParam) => {
   return {
@@ -49,6 +50,7 @@ export const getBalatroConfig = (params: GetConfigParam) => {
       getGoldenJokerConfig(params),
       getGoldenTicketConfig(params),
       getGreedyJokerConfig(params),
+      getGreenJokerConfig(params),
     ],
   }
 }
