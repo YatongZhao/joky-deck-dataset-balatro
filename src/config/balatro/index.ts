@@ -1,4 +1,4 @@
-import { GetConfigParam } from '@yatongzhao/joky-deck-core'
+import type { Config, GetConfigParam } from '@yatongzhao/joky-deck-core'
 import { getAbstractJokerConfig } from './jokers/AbstractJoker/AbstractJoker'
 import { getBannerConfig } from './jokers/Banner.ts/Banner'
 import { getBlueJokerConfig } from './jokers/BlueJoker/BlueJoker'
@@ -23,8 +23,9 @@ import { getGoldenJokerConfig } from './jokers/GoldenJoker/GoldenJoker'
 import { getGoldenTicketConfig } from './jokers/GoldenTicket/GoldenTicket'
 import { getGreedyJokerConfig } from './jokers/GreedyJoker/GreedyJoker'
 import { getGreenJokerConfig } from './jokers/GreenJoker/GreenJoker'
+import { getPlanetConfigs } from './planets'
 
-export const getBalatroConfig = (params: GetConfigParam) => {
+export const getBalatroConfig = (params: GetConfigParam): Config => {
   return {
     jokers: [
       getAbstractJokerConfig(params),
@@ -52,5 +53,6 @@ export const getBalatroConfig = (params: GetConfigParam) => {
       getGreedyJokerConfig(params),
       getGreenJokerConfig(params),
     ],
+    planets: getPlanetConfigs(params),
   }
 }
